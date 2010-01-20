@@ -20,6 +20,9 @@
             {block:Posts}
                 {block:Text}
                     <li class="post text">
+                        <div class="meta">
+                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
+                        </div>
                         <div class="post-inner">
                             {block:Title}
                                 <h3><a href="{Permalink}">{Title}</a></h3>
@@ -27,14 +30,13 @@
 
                             {Body}
                         </div>
-                        <div class="meta">
-                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
-                        </div>
-                    </li>
                 {/block:Text}
 
                 {block:Photo}
                     <li class="post photo">
+                        <div class="meta">
+                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
+                        </div>
                         <div class="post-inner">
                             <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
 
@@ -42,14 +44,13 @@
                                 <div class="caption">{Caption}</div>
                             {/block:Caption}
                         </div>
-                        <div class="meta">
-                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
-                        </div>
-                    </li>
                 {/block:Photo}
                 
                 {block:Photoset}
                     <li class="post photoset">
+                        <div class="meta">
+                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
+                        </div>
                         <div class="post-inner">
                             {Photoset-500}
 
@@ -57,14 +58,13 @@
                                 <div class="caption">{Caption}</div>
                             {/block:Caption}
                         </div>
-                        <div class="meta">
-                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
-                        </div>
-                    </li>
                 {/block:Photoset}
 
                 {block:Quote}
                     <li class="post quote">
+                        <div class="meta">
+                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
+                        </div>
                         <div class="post-inner">
                             "{Quote}"
 
@@ -72,14 +72,13 @@
                                 <div class="source">{Source}</div>
                             {/block:Source}
                         </div>
-                        <div class="meta">
-                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
-                        </div>
-                    </li>
                 {/block:Quote}
 
                 {block:Link}
                     <li class="post link">
+                        <div class="meta">
+                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
+                        </div>
                         <div class="post-inner">
                             <a href="{URL}" class="link" {Target}>{Name}</a>
 
@@ -87,14 +86,13 @@
                                 <div class="description">{Description}</div>
                             {/block:Description}
                         </div>
-                        <div class="meta">
-                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
-                        </div>
-                    </li>
                 {/block:Link}
 
                 {block:Chat}
                     <li class="post chat">
+                        <div class="meta">
+                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
+                        </div>
                         <div class="post-inner">
                             {block:Title}
                                 <h3><a href="{Permalink}">{Title}</a></h3>
@@ -112,14 +110,13 @@
                                 {/block:Lines}
                             </ul>
                         </div>
-                        <div class="meta">
-                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
-                        </div>
-                    </li>
                 {/block:Chat}
 
                 {block:Video}
                     <li class="post video">
+                        <div class="meta">
+                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
+                        </div>
                         <div class="post-inner">
                             {Video-500}
 
@@ -127,11 +124,17 @@
                                 <div class="caption">{Caption}</div>
                             {/block:Caption}
                         </div>
-                        <div class="meta">
-                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
-                        </div>
-                    </li>
                 {/block:Video}
+                        
+                {block:HasTags}
+                    <ul class="tags">
+                        {block:Tags}
+                            <li><a href="{TagURL}">{Tag}</a></li>
+                        {/block:Tags}
+                    </ul>
+                {/block:HasTags}
+
+            </li>
             {/block:Posts}
         </ol>
 
