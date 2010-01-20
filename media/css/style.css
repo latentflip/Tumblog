@@ -1,0 +1,191 @@
+/*Reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+/*End Reset*/
+
+body {
+	font-family: "Helvetica Neue", "Helvetica", "Lucida Grande", "Arial", "sans-serif";
+	font-weight: 200;
+	color: #333;
+	font-size: 16px;
+	line-height: 145%;
+	background: #211E1E;
+	background-image: url(http://latentflip.com/blog/wp-content/phones.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+h3 {
+	font-size: 145%;
+	margin-bottom: 20px;
+}
+
+a {
+	color: #FF8134;
+	text-decoration: none;
+}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+p, #posts li ul {
+	margin-bottom: 20px;
+}
+
+
+
+#posts {
+	width: 500px;
+	margin: 0 auto;
+}
+	/*List Styles*/
+	#posts li li{
+		margin-left: 5px;
+	}
+
+		#posts li li:before {
+			content: "\25B8";
+			margin-right: 5px;
+			color: #999;
+			text-shadow: none;
+		}
+		
+			#posts li li li {
+				margin-left: 10px;
+			}
+			
+				#posts li li li:before {
+					content: "-";
+				}
+	
+	#posts .post-inner {
+		padding: 20px;
+		background: #fafafa;
+		background: rgba(255,255,255,0.85);
+		/*background-image: url(http://latentflip.com/blog/wp-content/brcorner.png);
+		background-position: bottom right;
+		background-repeat: no-repeat;*/
+		-moz-border-radius: 0 0 20px 0;
+		text-shadow: #ccc 1px 1px 2px;
+		position: relative;
+		z-index: 2;
+		/*-moz-box-shadow: 0px 3px 3px #111;
+		-webkit-box-shadow: 0px 3px 3px #111;
+		box-shadow: 0px 3px 3px #111;*/
+	}
+	
+	#posts .post {
+		/*(padding-bottom: 20px;*/
+		background: rgba(255,255,255,0.7);
+		-moz-border-radius: 0 0 20px 0;
+		margin: 40px 20px;
+	}
+		
+	#posts blockquote {
+		/*background: rgba(70,67,67,1);*/
+		padding: 10px 30px;
+		position: relative;
+		margin-bottom: 40px;
+		margin-top: 40px;
+		text-align: justify;
+	}
+	
+	#posts blockquote:before, #posts blockquote:after {
+		content: "\201C";
+		position: absolute;
+		line-height: 50px;
+		font-size: 200px;
+		opacity: 0.1;
+		font-family: Georgia, "Times New Roman", Serif;
+		text-shadow: none;
+		color: #999;
+	}
+	
+	#posts blockquote:before {
+		top: 50px;
+		left: -5px;
+	}
+	#posts blockquote:after {
+		content: "\201D";
+		bottom: -55px;
+		right: -5px;
+	}
+	
+	/*.post .icon {
+		position: absolute;
+		left: -120px;
+		top: 0;
+		font-size: 200px;
+		font-family: Georgia, "Times New Roman", "Serif";
+		width: 100px;
+		height: 100px;
+		line-height: 100px;
+		text-align: center;
+		background: rgba(220,220,220,0.09);
+		color: rgba(176,176,176,1);
+		text-shadow: none;
+		z-index:1;
+	}*/
+	
+	
+	#posts .photo {}
+	#posts .photo img {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			margin-left: -40px;
+			border: 10px rgba(250,250,250,0.9) solid;
+			-moz-border-radius: 0 0 10px 0;
+			/*background-image: url(http://latentflip.com/blog/wp-content/brcorner.png);
+			background-repeat: no-repeat;
+			background-position: bottom right;*/
+			width: 480px;
+		}
+		
+	#posts .quote {}
+	#posts .quote .source {
+		text-align: right;
+		font-style: italic;
+		opacity: 0.8;
+		text-shadow: none;
+	}
+	
+	#posts .post .meta {
+		padding: 3px;
+		font-size: 82%;
+		margin: 0 5px;
+	}
+	
+		#posts .post .meta p {
+			margin-bottom: 0;
+		}
