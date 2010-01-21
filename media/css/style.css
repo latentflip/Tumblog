@@ -70,22 +70,22 @@ p, #posts li ul {
 	margin: 0 auto;
 }
 	/*List Styles*/
-	#posts li li{
+	.post-inner li{
 		margin-left: 5px;
 	}
 
-		#posts li li:before {
+		.post-inner li:before {
 			content: "\25B8";
 			margin-right: 5px;
 			color: #999;
 			text-shadow: none;
 		}
 		
-			#posts li li li {
+			.post-inner li li {
 				margin-left: 10px;
 			}
 			
-				#posts li li li:before {
+				.post-inner li li:before {
 					content: "-";
 				}
 	
@@ -96,7 +96,7 @@ p, #posts li ul {
 		/*background-image: url(http://latentflip.com/blog/wp-content/brcorner.png);
 		background-position: bottom right;
 		background-repeat: no-repeat;*/
-		-moz-border-radius: 0 0 20px 0;
+		-moz-border-radius: 20px 0 20px 0;
 		text-shadow: #ccc 1px 1px 2px;
 		position: relative;
 		z-index: 2;
@@ -108,7 +108,7 @@ p, #posts li ul {
 	#posts .post {
 		/*(padding-bottom: 20px;*/
 		background: rgba(255,255,255,0.7);
-		-moz-border-radius: 0 0 20px 0;
+		-moz-border-radius: 20px 0 20px 0;
 		margin: 40px 20px;
 	}
 		
@@ -188,4 +188,21 @@ p, #posts li ul {
 	
 		#posts .post .meta p {
 			margin-bottom: 0;
+		}
+		
+
+
+.post-footer {
+	padding: 5px 10px 5px 5px;
+	font-size: 82%;
+}
+#posts ul.tags {
+	display: inline-block;
+	margin: 0;
+}	
+	#posts ul.tags li {
+		display: inline-block;
+	}
+		#posts ul.tags li a {
+			color: inherit;
 		}
