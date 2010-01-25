@@ -237,7 +237,7 @@ body {margin-top: 40px;}
 		}
 		
 		#posts .photo img,
-		#posts .text img {
+		#posts .text .image {
 			-moz-border-radius: 3px;
 			-webkit-border-radius: 3px;
 			border-radius: 3px;
