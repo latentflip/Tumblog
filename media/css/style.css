@@ -58,6 +58,11 @@ p, .post-inner ul {
 h2 { margin-bottom: 20px; }
 h3, h4, h5, h6 { margin-bottom: 0.5em; }
 
+#personal-info {
+	
+}
+
+
 #posts {
 	width: 500px;
 	margin: 0 auto;
