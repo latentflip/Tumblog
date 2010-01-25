@@ -10,140 +10,138 @@
         
     </head>
     <body>
-        <div id="personal-info">
-            <h1>{Title}</h1>
-            <img src="{PortraitURL-128}" alt="Philip Roberts"/>
-            <p>{Description}</p>
-        </div>
+        <div id="body-wrapper">
+            <div id="personal-info">
+                <h1>{Title}</h1>
+                <img src="{PortraitURL-128}" alt="Philip Roberts"/>
+                <p id="description">{Description}</p>
+            </div>
+        
+            <ol id="posts">
+                {block:Posts}
+                    {block:Text}
+                        <li class="post text">
+                            <div class="meta">
+                                <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
+                            </div>
+                            <div class="post-inner">
+                                {block:Title}
+                                    <h2 class="post-title"><a href="{Permalink}">{Title}</a></h2>
+                                {/block:Title}
 
-        {block:Description}
-            <p id="description">{Description}</p>
-        {/block:Description}
+                                {Body}
+                            </div>
+                    {/block:Text}
 
-        <ol id="posts">
-            {block:Posts}
-                {block:Text}
-                    <li class="post text">
-                        <div class="meta">
-                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
-                        </div>
-                        <div class="post-inner">
-                            {block:Title}
-                                <h2 class="post-title"><a href="{Permalink}">{Title}</a></h2>
-                            {/block:Title}
+                    {block:Photo}
+                        <li class="post photo">
+                            <div class="meta">
+                                <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
+                            </div>
+                            <div class="post-inner">
+                                <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
 
-                            {Body}
-                        </div>
-                {/block:Text}
-
-                {block:Photo}
-                    <li class="post photo">
-                        <div class="meta">
-                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
-                        </div>
-                        <div class="post-inner">
-                            <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
-
-                            {block:Caption}
-                                <div class="caption">{Caption}</div>
-                            {/block:Caption}
-                        </div>
-                {/block:Photo}
+                                {block:Caption}
+                                    <div class="caption">{Caption}</div>
+                                {/block:Caption}
+                            </div>
+                    {/block:Photo}
                 
-                {block:Photoset}
-                    <li class="post photoset">
-                        <div class="meta">
-                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
-                        </div>
-                        <div class="post-inner">
-                            {Photoset-500}
+                    {block:Photoset}
+                        <li class="post photoset">
+                            <div class="meta">
+                                <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
+                            </div>
+                            <div class="post-inner">
+                                {Photoset-500}
 
-                            {block:Caption}
-                                <div class="caption">{Caption}</div>
-                            {/block:Caption}
-                        </div>
-                {/block:Photoset}
+                                {block:Caption}
+                                    <div class="caption">{Caption}</div>
+                                {/block:Caption}
+                            </div>
+                    {/block:Photoset}
 
-                {block:Quote}
-                    <li class="post quote">
-                        <div class="meta">
-                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
-                        </div>
-                        <div class="post-inner">
-                            "{Quote}"
+                    {block:Quote}
+                        <li class="post quote">
+                            <div class="meta">
+                                <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
+                            </div>
+                            <div class="post-inner">
+                                "{Quote}"
 
-                            {block:Source}
-                                <div class="source">{Source}</div>
-                            {/block:Source}
-                        </div>
-                {/block:Quote}
+                                {block:Source}
+                                    <div class="source">{Source}</div>
+                                {/block:Source}
+                            </div>
+                    {/block:Quote}
 
-                {block:Link}
-                    <li class="post link">
-                        <div class="meta">
-                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
-                        </div>
-                        <div class="post-inner">
-                            <a href="{URL}" class="link" {Target}>{Name}</a>
+                    {block:Link}
+                        <li class="post link">
+                            <div class="meta">
+                                <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
+                            </div>
+                            <div class="post-inner">
+                                <a href="{URL}" class="link" {Target}>{Name}</a>
 
-                            {block:Description}
-                                <div class="description">{Description}</div>
-                            {/block:Description}
-                        </div>
-                {/block:Link}
+                                {block:Description}
+                                    <div class="description">{Description}</div>
+                                {/block:Description}
+                            </div>
+                    {/block:Link}
 
-                {block:Chat}
-                    <li class="post chat">
-                        <div class="meta">
-                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
-                        </div>
-                        <div class="post-inner">
-                            {block:Title}
-                                <h2 class="post-title"><a href="{Permalink}">{Title}</a></h2>
-                            {/block:Title}
+                    {block:Chat}
+                        <li class="post chat">
+                            <div class="meta">
+                                <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
+                            </div>
+                            <div class="post-inner">
+                                {block:Title}
+                                    <h2 class="post-title"><a href="{Permalink}">{Title}</a></h2>
+                                {/block:Title}
 
-                            <ul class="chat">
-                                {block:Lines}
-                                    <li class="{Alt} user_{UserNumber}">
-                                        {block:Label}
-                                            <span class="label">{Label}</span>
-                                        {/block:Label}
+                                <ul class="chat">
+                                    {block:Lines}
+                                        <li class="{Alt} user_{UserNumber}">
+                                            {block:Label}
+                                                <span class="label">{Label}</span>
+                                            {/block:Label}
 
-                                        {Line}
-                                    </li>
-                                {/block:Lines}
-                            </ul>
-                        </div>
-                {/block:Chat}
+                                            {Line}
+                                        </li>
+                                    {/block:Lines}
+                                </ul>
+                            </div>
+                    {/block:Chat}
 
-                {block:Video}
-                    <li class="post video">
-                        <div class="meta">
-                            <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
-                        </div>
-                        <div class="post-inner">
-                            {Video-500}
+                    {block:Video}
+                        <li class="post video">
+                            <div class="meta">
+                                <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
+                            </div>
+                            <div class="post-inner">
+                                {Video-500}
 
-                            {block:Caption}
-                                <div class="caption">{Caption}</div>
-                            {/block:Caption}
-                        </div>
-                {/block:Video}
+                                {block:Caption}
+                                    <div class="caption">{Caption}</div>
+                                {/block:Caption}
+                            </div>
+                    {/block:Video}
                         
-                {block:HasTags}
-                <div class="post-footer">
-                    <h5>Tags /</h5>
-                    <ul class="tags">
-                        {block:Tags}
-                            <li>/ <a href="{TagURL}">{Tag}</a></li>
-                        {/block:Tags}
-                    </ul>
-                </div>
-                {/block:HasTags}
+                    {block:HasTags}
+                    <div class="post-footer">
+                        <h5>Tags /</h5>
+                        <ul class="tags">
+                            {block:Tags}
+                                <li>/ <a href="{TagURL}">{Tag}</a></li>
+                            {/block:Tags}
+                        </ul>
+                    </div>
+                    {/block:HasTags}
 
-            </li>
-            {/block:Posts}
-        </ol>
+                </li>
+                {/block:Posts}
+            </ol>
+        </div>
 
         <p id="footer">
             {block:PreviousPage}

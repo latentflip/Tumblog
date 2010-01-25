@@ -58,13 +58,23 @@ p, .post-inner ul {
 h2 { margin-bottom: 20px; }
 h3, h4, h5, h6 { margin-bottom: 0.5em; }
 
+body {}
+
+#body-wrapper {
+	margin: 0 auto;
+	padding: 0;
+	width: 500px;
+	position: relative;
+}
+
 #personal-info {
 	background: rgba(255,255,255,0.7);
 	text-align: center;
-	float: right;
-	width: 150px;
-	padding: 40px;
-	margin: 40px;
+	width: 180px;
+	padding: 20px;
+	position: absolute;
+	top: 0;
+	right: -280px;
 }
 
 
