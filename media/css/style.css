@@ -237,10 +237,10 @@ body {margin-top: 40px;}
 		}
 		
 		#posts .photo img,
-		#posts .text .image {
-			-moz-border-radius: 3px;
-			-webkit-border-radius: 3px;
-			border-radius: 3px;
+		#posts .text p.image {
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
 		}
 		
 	#posts .quote {}
