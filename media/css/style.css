@@ -58,7 +58,7 @@ p, .post-inner ul {
 h2 { margin-bottom: 20px; }
 h3, h4, h5, h6 { margin-bottom: 0.5em; }
 
-body {}
+body {margin-top: 40px;}
 
 #body-wrapper {
 	margin: 0 auto;
@@ -68,13 +68,35 @@ body {}
 }
 
 #personal-info {
-	background: rgba(255,255,255,0.7);
+	background: rgba(255,255,255,0.9);
 	text-align: center;
 	width: 180px;
 	padding: 20px;
 	position: absolute;
 	top: 0;
 	right: -280px;
+}
+
+	#personal-info h1 {
+		font-size: 164%;
+		line-height: 1.2em;
+		margin-bottom: 20px;
+	}
+	
+	#personal-info img {
+		border: 5px white solid;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+	}
+
+#banner {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: white;
+	height: 50px;
+	z-index: 4;
 }
 
 
@@ -108,7 +130,8 @@ body {}
 		}
 	
 		.post, 
-		.post-inner {	
+		.post-inner,
+		#personal-info {	
 			border-radius: 20px 0 20px 0;
 			-moz-border-radius: 20px 0 20px 0;
 			-webkit-border-radius: 20px 0 20px 0;
