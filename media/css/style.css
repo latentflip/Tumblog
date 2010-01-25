@@ -33,7 +33,7 @@ abbr,acronym { border:0;
 /*End Reset*/
 
 body {
-	font: 16px/1.5em "Helvetica Neue", "Helvetica", "Lucida Grande", "Arial", "sans-serif";
+	font: 15.5px/1.5em "Helvetica Neue", "Helvetica", "Lucida Grande", "Arial", "sans-serif";
 	font-weight: 200;
 	color: #333;
 	background: #211E1E;
@@ -72,7 +72,7 @@ body {margin-top: 40px;}
 	position: absolute;
 	top: 0;
 	right: -280px;
-	text-shadow: #c5c5c5 1px 1px 2px;
+	text-shadow: #cfcfcf 1px 1px 2px;
 }
 
 #personal-info-inner {
@@ -148,7 +148,7 @@ body {margin-top: 40px;}
 			background: #fafafa;
 			background: rgba(255,255,255,0.85);
 			position: relative;
-			text-shadow: #c5c5c5 1px 1px 2px;
+			text-shadow: #cfcfcf 1px 1px 2px;
 			z-index: 2;
 			padding: 25px 30px;
 		}
