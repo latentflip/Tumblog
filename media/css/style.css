@@ -101,16 +101,19 @@ body {margin-top: 40px;}
 	}
 
 	#personal-info #elsewhere {
-		margin: 5px 10px;
+		margin: 8px 25px 5px 25px;
 	}
 		#personal-info #elsewhere img {
 			border: none;
 			width: 24px;
+			margin: 0;
 		}
 		#personal-info #elsewhere li {
 			display: inline;
 			margin: 0 3px;
+			
 		}
+		
 #banner {
 	position: fixed;
 	top: 0;
