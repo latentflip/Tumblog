@@ -36,7 +36,6 @@ body {
 	font: 16px/1.5em "Helvetica Neue", "Helvetica", "Lucida Grande", "Arial", "sans-serif";
 	font-weight: 200;
 	color: #333;
-	/*font-size: 16px;*/
 	background: #211E1E;
 	background-image: url(http://latentflip.com/blog/wp-content/phones.png);
 	background-position: top left;
@@ -49,36 +48,28 @@ h2 { font-size: 164%;}
 h3 { font-size: 145%;}
 h4 { font-size: 118%;}
 
-h3 { margin-bottom: 20px; }
-
-a {
-	color: #FF8134;
-	text-decoration: none;
-}
-
-	a:hover {
-		text-decoration: underline;
-	}
+a { color: #FF8134; text-decoration: none; }
+	a:hover { text-decoration: underline; }
 
 p, .post li ul {
 	margin-bottom: 20px;
 }
 
-
+h2 { margin-bottom: 20px; }
+h3, h4, h5, h6 { margin-bottom: 0.5em; }
 
 #posts {
 	width: 500px;
 	margin: 0 auto;
 }
 	/*List Styles*/
-	.post-inner li{ margin-left: 5px; }
+	.post-inner li{ margin: 10px 20px;}
 		.post-inner li:before {
 			content: "\25B8";
 			margin-right: 5px;
 			color: #999;
 			text-shadow: none;
 		}
-		
 			.post-inner li li { margin-left: 10px; }
 				.post-inner li li:before { content: "-"; }
 	
@@ -105,7 +96,7 @@ p, .post li ul {
 		
 	.post .meta {
 		font-size: 82%;
-		padding: 6px 10px;
+		padding: 6px 10px 7px 10px;
 		line-height: 1em;
 		text-align: right;
 	}
