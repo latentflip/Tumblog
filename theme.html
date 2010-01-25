@@ -25,7 +25,7 @@
                         </div>
                         <div class="post-inner">
                             {block:Title}
-                                <h3><a href="{Permalink}">{Title}</a></h3>
+                                <h2 class="post-title"><a href="{Permalink}">{Title}</a></h2>
                             {/block:Title}
 
                             {Body}
@@ -95,7 +95,7 @@
                         </div>
                         <div class="post-inner">
                             {block:Title}
-                                <h3><a href="{Permalink}">{Title}</a></h3>
+                                <h2 class="post-title"><a href="{Permalink}">{Title}</a></h2>
                             {/block:Title}
 
                             <ul class="chat">
@@ -128,8 +128,8 @@
                         
                 {block:HasTags}
                 <div class="post-footer">
-                    
-                    Tags /<ul class="tags">
+                    <h5>Tags /</h5>
+                    <ul class="tags">
                         {block:Tags}
                             <li>/ <a href="{TagURL}">{Tag}</a></li>
                         {/block:Tags}
