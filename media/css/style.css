@@ -51,7 +51,7 @@ h4 { font-size: 118%;}
 a { color: #FF8134; text-decoration: none; }
 	a:hover { text-decoration: underline; }
 
-p, .post li ul {
+p, .post-inner ul {
 	margin-bottom: 20px;
 }
 
