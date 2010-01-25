@@ -68,13 +68,18 @@ body {margin-top: 40px;}
 }
 
 #personal-info {
-	background: rgba(255,255,255,0.9);
-	text-align: center;
-	width: 180px;
-	padding: 20px;
+	background: rgba(255,255,255,0.7);
 	position: absolute;
 	top: 0;
 	right: -280px;
+	text-shadow: #ccc 1px 1px 2px;
+}
+
+#personal-info-inner {
+	background: rgba(255, 255, 255, 0.85);
+	width: 180px;
+	padding: 20px;
+	text-align: center;
 }
 
 	#personal-info h1 {
@@ -88,8 +93,24 @@ body {margin-top: 40px;}
 		border-radius: 3px;
 		-moz-border-radius: 3px;
 		-webkit-border-radius: 3px;
+		margin-bottom: 20px;
+	}
+	
+	#personal-info p {
+		margin-bottom: 10px;
 	}
 
+	#personal-info #elsewhere {
+		margin: 5px 10px;
+	}
+		#personal-info #elsewhere img {
+			border: none;
+			width: 24px;
+		}
+		#personal-info #elsewhere li {
+			display: inline;
+			margin: 0 3px;
+		}
 #banner {
 	position: fixed;
 	top: 0;
@@ -131,7 +152,8 @@ body {margin-top: 40px;}
 	
 		.post, 
 		.post-inner,
-		#personal-info {	
+		#personal-info,
+		#personal-info-inner {	
 			border-radius: 20px 0 20px 0;
 			-moz-border-radius: 20px 0 20px 0;
 			-webkit-border-radius: 20px 0 20px 0;
