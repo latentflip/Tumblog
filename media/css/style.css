@@ -55,8 +55,8 @@ p, .post-inner ul {
 	margin-bottom: 20px;
 }
 
-h2 { margin-bottom: 20px; }
-h3, h4, h5, h6 { margin-bottom: 0.5em; }
+h2 { margin-bottom: 20px; margin-left: -10px;}
+h3, h4, h5, h6 { margin-bottom: 0.5em; margin-left: -5px;}
 
 body {margin-top: 40px;}
 
@@ -72,7 +72,7 @@ body {margin-top: 40px;}
 	position: absolute;
 	top: 0;
 	right: -280px;
-	text-shadow: #ccc 1px 1px 2px;
+	text-shadow: #c5c5c5 1px 1px 2px;
 }
 
 #personal-info-inner {
@@ -148,9 +148,9 @@ body {margin-top: 40px;}
 			background: #fafafa;
 			background: rgba(255,255,255,0.85);
 			position: relative;
-			text-shadow: #ccc 1px 1px 2px;
+			text-shadow: #c5c5c5 1px 1px 2px;
 			z-index: 2;
-			padding: 20px;
+			padding: 25px 30px;
 		}
 	
 		.post, 
@@ -182,6 +182,7 @@ body {margin-top: 40px;}
 	.post-footer h5 {
 		display: inline-block;
 		margin: 0;
+		font-weight: 200;
 	}
 
 	ul.tags {
@@ -232,8 +233,14 @@ body {margin-top: 40px;}
 			margin-bottom: 10px;
 			margin-left: -40px;
 			border: 10px rgba(250,250,250,0.9) solid;
-			-moz-border-radius: 3px;
 			width: 480px;
+		}
+		
+		#posts .photo img,
+		#posts .text img {
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
 		}
 		
 	#posts .quote {}
@@ -243,6 +250,19 @@ body {margin-top: 40px;}
 			opacity: 0.8;
 			text-shadow: none;
 		}
-	
 
-		
+	#posts .text img {
+		margin: 20px;
+		margin-bottom: 5px;
+		width: 350px;
+	}
+	
+	#posts .text p.image {
+		text-align: center;
+		background: white;
+	}
+		#posts .text p.image span.caption {
+			font-size: 90%;
+			display: block;
+			margin: 5px 10px 10px 10px;
+		}
