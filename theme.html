@@ -48,7 +48,9 @@
                                 <p class="date">{DayOfMonth}-{ShortMonth}-{Year}</p>
                             </div>
                             <div class="post-inner">
-                                <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+                                {LinkOpenTag}
+                                    <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+                                {LinkCloseTag}
 
                                 {block:Caption}
                                     <div class="caption">{Caption}</div>

@@ -129,19 +129,24 @@ class Api:
 		args['type'] = 'regular'
 		return self._write(args)
 		
- 	def edit_regular(self, post_id=None, body=None, **args): 
-		if body: 
-			args['body'] = body 
-			
-		if post_id:
-		    args['post-id'] = post_id
-		    
-		args = self._fixnames(args)
-		if not 'body' in args and not 'post_id' in args:
-			raise TumblrError("Must supply body and post_id")
-
+	def edit_regular(self, post_id=None, **kwargs): 
+		post = kwargs
+		
+		if 'post_id' in post:
+			post['post_id'] = post_id
+		
+		if 'tags' in post:
+			post['tags'] = '"'+'", "'.join(post['tags'])+'"'
+		
+		post = self._fixnames(post)
+		
+		post['body'] = post['body'].encode('ascii', 'xmlcharrefreplace')
+		
+		if not 'body' in args or not 'post_id' in args:
+			raise TumblrError("Must supply body or post_id")
+		 
 		self.auth_check()
-		return self._write(args)
+		return self._write(post)
 
 	def write_photo(self, source=None, **args): 
 		if source:
