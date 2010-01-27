@@ -243,6 +243,14 @@ body {margin-top: 40px;}
 			width: 480px;
 		}
 		
+		#posts .photo .caption p {
+			margin-bottom: 0;
+		}
+		
+		#posts .photo .caption {
+			padding-top: 10px;
+		}
+		
 		#posts .photo img,
 		#posts .text p.image {
 			-moz-border-radius: 5px;
