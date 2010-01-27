@@ -108,6 +108,13 @@ body {margin-top: 40px;}
 			width: 24px;
 			margin: 0;
 		}
+		
+		#personal-info #elsewhere img:hover {
+			-moz-transform: rotate(15deg);
+			-webkit-transform: rotate(15deg);
+			transform: rotate(15deg);
+		}
+		
 		#personal-info #elsewhere li {
 			display: inline;
 			margin: 0 3px;
