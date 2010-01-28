@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from tumblr import Api
 import yaml
 import sys
@@ -22,6 +23,12 @@ api = Api(BLOG,USER,PASSWORD)
 type = post.pop('type')
 if 'id' in post:
 	post['post_id'] = post.pop('id')
+
+no_html = ['title']
+for k,v in post.items():
+	if k not in no_html and hasattr(v, 'encode'):
+		post[k] = v.encode('ascii', 'xmlcharrefreplace')
+
 try:
 	do_func = getattr(api, 'write_'+type)
 except:
