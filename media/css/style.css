@@ -264,6 +264,7 @@ body {margin-top: 40px;}
 			font-style: italic;
 			opacity: 0.8;
 			text-shadow: none;
+			font-weight: normal;
 		}
 
 	#posts .text img {
@@ -282,4 +283,8 @@ body {margin-top: 40px;}
 			margin: 5px 10px 10px 10px;
 		}
 
-.addendum { font-size: 70%;}
+.addendum { 
+	font-size: 70%; 
+	font-style: normal;
+	display:block;
+}
