@@ -163,7 +163,8 @@ body {margin-top: 40px;}
 		.post, 
 		.post-inner,
 		#personal-info,
-		#personal-info-inner {	
+		#personal-info-inner,
+		#disqusThread {	
 			border-radius: 20px 0 20px 0;
 			-moz-border-radius: 20px 0 20px 0;
 			-webkit-border-radius: 20px 0 20px 0;
@@ -291,5 +292,10 @@ body {margin-top: 40px;}
 
 
 #disqusComments {
-	margin: 40px 20px;
+	margin: 0 auto;
+	width: 500px;
 }
+
+	#disqusThread {
+		background: rgba(255,255,255,0.7);
+	}
