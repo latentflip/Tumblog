@@ -300,8 +300,14 @@ body {margin-top: 40px;}
 
 	#disqus_thread {
 		background: rgba(255,255,255,0.7);
+		margin: 40px 20px;
 	}
 	
 		#dsq-content {
 			
+		}
+		
+		.dsq-subscribe-email, 
+		.dsq-subscribe-rss {
+			display: none;
 		}

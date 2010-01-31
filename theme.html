@@ -153,7 +153,15 @@
             </ol>
             
             <div id="disqusComments">
-                <script type="text/javascript">var disqus_url = "{Permalink}"; var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";</script>{block:Permalink}<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/philiprobertsblog/embed.js"></script><noscript><a href="http://disqus.com/forums/philiprobertsblog/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>{/block:Permalink}<script type="text/javascript">
+                <script type="text/javascript">var disqus_url = "{Permalink}"; var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";</script>
+                {block:PermalinkPage}
+                    <div id="disqus_thread"></div>
+                        <script type="text/javascript" src="http://disqus.com/forums/philiprobertsblog/embed.js"></script>
+                        <noscript>
+                            <a href="http://disqus.com/forums/philiprobertsblog/?url=ref">View the discussion thread.</a></noscript>
+                {/block:PermalinkPage}
+                
+                <script type="text/javascript">
                 //<![CDATA[
                 (function() {
                 	var links = document.getElementsByTagName('a');
