@@ -151,7 +151,8 @@ body {margin-top: 40px;}
 		background: rgba(255,255,255,0.7);
 		margin: 40px 20px;
 	}
-		.post-inner {
+		.post-inner,
+		#dsq-content {
 			background: #fafafa;
 			background: rgba(255,255,255,0.85);
 			position: relative;
@@ -164,7 +165,8 @@ body {margin-top: 40px;}
 		.post-inner,
 		#personal-info,
 		#personal-info-inner,
-		#disqus_thread {	
+		#disqus_thread,
+		#dsq-content {	
 			border-radius: 20px 0 20px 0;
 			-moz-border-radius: 20px 0 20px 0;
 			-webkit-border-radius: 20px 0 20px 0;
@@ -298,5 +300,8 @@ body {margin-top: 40px;}
 
 	#disqus_thread {
 		background: rgba(255,255,255,0.7);
-		
 	}
+	
+		#dsq-content {
+			
+		}
