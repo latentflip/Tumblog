@@ -138,19 +138,20 @@
                             </div>
                     {/block:Video}
                         
-                    {block:HasTags}
+                    
                     <div class="post-footer">
+                        {block:HasTags}
                         <h5>Tags /</h5><ul class="tags">
                             {block:Tags}
                                 <li>/ <a href="{TagURL}">{Tag}</a></li>
                             {/block:Tags}
                         </ul>
+                        {/block:HasTags}
+                        <a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a>
                     </div>
-                    {/block:HasTags}
-
                 </li>
                 {/block:Posts}
-            </ol>
+            </ol>   
             
             <div id="disqusComments">
                 <script type="text/javascript">var disqus_url = "{Permalink}"; var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";</script>

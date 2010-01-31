@@ -311,3 +311,8 @@ body {margin-top: 40px;}
 		.dsq-subscribe-rss {
 			display: none;
 		}
+		
+		.dsq-comment-count {
+			display: block;
+			color: inherit;
+		}
