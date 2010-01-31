@@ -151,6 +151,24 @@
                 </li>
                 {/block:Posts}
             </ol>
+            
+            <div id="disqusComments">
+                <script type="text/javascript">var disqus_url = "{Permalink}"; var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";</script>{block:Permalink}<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/philiprobertsblog/embed.js"></script><noscript><a href="http://disqus.com/forums/philiprobertsblog/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>{/block:Permalink}<script type="text/javascript">
+                //<![CDATA[
+                (function() {
+                	var links = document.getElementsByTagName('a');
+                	var query = '?';
+                	for(var i = 0; i < links.length; i++) {
+                	if(links[i].href.indexOf('#disqus_thread') >= 0) {
+                		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+                	}
+                	}
+                	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/philiprobertsblog/get_num_replies.js' + query + '"></' + 'script>');
+                })();
+                //]]>
+                </script>
+            </div>
+            
         </div>
 
         <div id="footer">

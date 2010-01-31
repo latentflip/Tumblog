@@ -288,3 +288,8 @@ body {margin-top: 40px;}
 	font-style: normal;
 	display:block;
 }
+
+
+#disqusComments {
+	margin: 40px 20px;
+}
