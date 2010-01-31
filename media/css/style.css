@@ -164,7 +164,7 @@ body {margin-top: 40px;}
 		.post-inner,
 		#personal-info,
 		#personal-info-inner,
-		#disqusThread {	
+		#disqus_thread {	
 			border-radius: 20px 0 20px 0;
 			-moz-border-radius: 20px 0 20px 0;
 			-webkit-border-radius: 20px 0 20px 0;
