@@ -41,6 +41,7 @@ body {
 	background-position: top left;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	min-height: 100%;
 }
 
 h1 { font-size: 218%;}
@@ -315,3 +316,9 @@ body {margin-top: 40px;}
 			display: block;
 			color: inherit;
 		}
+		
+#footer {
+	position: absolute;
+	bottom: 0;
+	background: rgba(0,0,0,0.75);
+}
