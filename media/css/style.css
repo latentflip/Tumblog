@@ -37,7 +37,7 @@ body {
 	font-weight: 200;
 	color: #333;
 	background: #211E1E;
-	background-image: url(http://latentflip.com/blog/wp-content/phones.png);
+	background-image: url(http://media.latentflip.com/images/plushie.png);
 	background-position: top left;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -304,7 +304,6 @@ body {margin-top: 40px;}
 	}
 	
 		#dsq-content {
-			
 		}
 		
 		.dsq-subscribe-email, 
