@@ -328,9 +328,16 @@ h3, h4, h5, h6 { margin-bottom: 0.5em; margin-left: -5px;}
 	width: 100%;
 	font-size: 90%;
 	overflow: hidden;
+	padding: 20px 0;
+	color: white;
 }
 
 	#footer .footer_column {
 		width: 33%;
 		float: left;
+	}
+	
+	#footer #my_stuff {
+		border-left: 1px white solid;
+		border-right: 1px white solid;
 	}
