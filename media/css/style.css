@@ -327,4 +327,10 @@ h3, h4, h5, h6 { margin-bottom: 0.5em; margin-left: -5px;}
 	height: 150	px;
 	width: 100%;
 	font-size: 90%;
+	overflow: hidden;
 }
+
+	#footer .footer_column {
+		width: 33%;
+		float: left;
+	}
