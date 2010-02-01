@@ -342,12 +342,11 @@ h3, h4, h5, h6 { margin-bottom: 0.5em; margin-left: -5px;}
 	
 	#footer #my_stuff {
 		margin-left: 25%;
-		border-left: 1px rgba(255,255,255,0.8) solid;
+		border-right: 1px rgba(255,255,255,0.8) solid;
+		text-align: right;
 	}
 	
 	#footer #blogroll {
-		border-right: 1px rgba(255,255,255,0.8) solid;
-		text-align: right;
 	}
 	
 		#footer .footer_column h4,
