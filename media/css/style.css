@@ -329,13 +329,22 @@ h3, h4, h5, h6 { margin-bottom: 0.5em; margin-left: -5px;}
 	font-size: 90%;
 	overflow: hidden;
 	padding: 20px 0;
-	color: white;
+	color: rgba(255,255,255,0.8);
 }
+	#footer a {
+		color: rgba(255,255,255,0.9);
+	}
 
 	#footer .footer_column {
 		width: 33%;
 		float: left;
 	}
+	
+		#footer .footer_column h4,
+		#footer .footer_column ul {
+			margin: 10px;
+			padding: 0;
+		}
 	
 	#footer #my_stuff {
 		border-left: 1px white solid;
