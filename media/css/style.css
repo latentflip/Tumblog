@@ -329,6 +329,9 @@ h3, h4, h5, h6 { margin-bottom: 0.5em; margin-left: -5px;}
 	overflow: hidden;
 	padding: 20px 0;
 	color: rgba(255,255,255,0.8);
+	-moz-box-shadow: 0 0 1px rgba(255, 255, 255, 0.14);
+	-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.14);
+	box-shadow: 0 0 1px rgba(255, 255, 255, 0.14);
 }
 	#footer a {
 		color: rgba(255,255,255,0.9);
