@@ -326,7 +326,7 @@ h3, h4, h5, h6 { margin-bottom: 0.5em; margin-left: -5px;}
 	background: rgba(0,0,0,0.75);
 	height: 150	px;
 	width: 100%;
-	font-size: 90%;
+	font-size: 85%;
 	overflow: hidden;
 	padding: 20px 0;
 	color: rgba(255,255,255,0.8);
@@ -336,8 +336,9 @@ h3, h4, h5, h6 { margin-bottom: 0.5em; margin-left: -5px;}
 	}
 
 	#footer .footer_column {
-		width: 33%;
+		width: 25%;
 		float: left;
+		margin-left: 25%;
 	}
 	
 		#footer .footer_column h4,
@@ -347,6 +348,6 @@ h3, h4, h5, h6 { margin-bottom: 0.5em; margin-left: -5px;}
 		}
 	
 	#footer #my_stuff {
-		border-left: 1px white solid;
-		border-right: 1px white solid;
+		border-left: 1px rgba(255,255,255,0.8) solid;
+		border-right: 1px rgba(255,255,255,0.8) solid;
 	}
