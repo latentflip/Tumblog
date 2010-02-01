@@ -42,6 +42,9 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	min-height: 100%;
+	
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 h1 { font-size: 218%;}
@@ -59,7 +62,6 @@ p, .post-inner ul {
 h2 { margin-bottom: 20px; margin-left: -10px;}
 h3, h4, h5, h6 { margin-bottom: 0.5em; margin-left: -5px;}
 
-body {margin-top: 40px;}
 
 #body-wrapper {
 	margin: 0 auto;
@@ -321,4 +323,6 @@ body {margin-top: 40px;}
 	position: absolute;
 	bottom: 0;
 	background: rgba(0,0,0,0.75);
+	height: 20px;
+	width: 100px;
 }
