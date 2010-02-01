@@ -44,7 +44,7 @@ body {
 	min-height: 100%;
 	
 	margin-top: 40px;
-	padding-bottom: 40px;
+	padding-bottom: 200px;
 	position: relative;
 }
 
@@ -324,6 +324,7 @@ h3, h4, h5, h6 { margin-bottom: 0.5em; margin-left: -5px;}
 	position: absolute;
 	bottom: 0;
 	background: rgba(0,0,0,0.75);
-	height: 20px;
+	height: 150	px;
 	width: 100%;
+	font-size: 90%;
 }
