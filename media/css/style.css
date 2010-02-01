@@ -43,7 +43,6 @@ body {
 	background-attachment: fixed;
 	min-height: 100%;
 	
-	margin-top: 40px;
 	padding-bottom: 200px;
 	position: relative;
 }
@@ -65,7 +64,7 @@ h3, h4, h5, h6 { margin-bottom: 0.5em; margin-left: -5px;}
 
 
 #body-wrapper {
-	margin: 0 auto;
+	margin: 40px auto 0 auto;
 	padding: 0;
 	width: 500px;
 	position: relative;
