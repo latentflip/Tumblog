@@ -154,6 +154,7 @@ h3, h4, h5, h6 { margin-bottom: 0.5em; margin-left: -5px;}
 			.post-inner li li { margin-left: 10px; }
 				.post-inner li li:before { content: "-"; }
 	
+		.post-inner li p { display:inline }
 	.post {
 		/*(padding-bottom: 20px;*/
 		background: rgba(255,255,255,0.7);
