@@ -14,6 +14,11 @@ address,caption,cite,code,dfn,em,strong,th,var {
 	font-style:normal;
 	font-weight:normal;
 }
+
+em { font-style: italic; }
+
+strong { font-weight: bold; } 
+
 ol,ul {
 	list-style:none;
 }
@@ -362,3 +367,5 @@ h3, h4, h5, h6 { margin-bottom: 0.5em; margin-left: -5px;}
 		#footer .footer_column ul {
 			margin-top: 0;
 		}
+
+#tumblr_controls { top:-35px!important;}
