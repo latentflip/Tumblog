@@ -1,5 +1,13 @@
 <html>
     <head>
+        <meta name="text:Twitter Username" content="philip_roberts"/>
+        <meta name="text:Github Username" content="latentflip"/>
+        <meta name="text:Flickr Username" content="latentflip"/>
+        <meta name="text:Last FM Username" content="latentflip"/>
+        <meta name="text:CSS Source" content="http://media.latentflip.com/css/style.css"/>
+        <meta name="text:Disqus Username" content="philiprobertsblog"/>
+        <meta name="text:Google Analytics Code" content="UA-12823969-1"/>
+        <meta name="text:Google Analytics Domain" content=".exampledomain.com"/>
         <title>
             {block:PostTitle}
                 {PostTitle} | 
@@ -11,7 +19,8 @@
         {block:Description}
             <meta name="description" content="{MetaDescription}" />
         {/block:Description}
-        <link rel="stylesheet" type="text/css" href="http://media.latentflip.com/css/style.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="{text:CSS Source}" media="all" />
+        
         
     </head>
     <body>
@@ -19,15 +28,28 @@
             <div id="personal-info">
                 <div id="personal-info-inner">
                     <h1><a href="/">{Title}</a></h1>
-                    <img src="{PortraitURL-128}" alt="Philip Roberts"/>
+                    <img src="{PortraitURL-128}" alt="{Title}"/>
                     <p id="description">{Description}</p>
                 </div>
                 <ul id="elsewhere">
-                    <li><a href="http://latentflip.tumblr.com/rss"><img alt="RSS Feed" title="RSS Feed" src="http://media.latentflip.com/icons/rss_32.png"></a></li>
-                    <li><a href="http://twitter.com/philip_roberts"><img alt="Twitter" title="Twitter" src="http://media.latentflip.com/icons/twitter_32.png"></a></li>
-                    <li><a href="http://flickr.com/quiescentflip"><img alt="Flickr" title="Flickr" src="http://media.latentflip.com/icons/flickr_32.png"></a></li>
-                    <li><a href="http://github.com/latentflip"><img alt="Github" title="Github" src="http://media.latentflip.com/icons/github_32.png"></a></li>
-                    <li><a href="http://last.fm/user/latentflip"><img alt="Last.fm" title="Last.fm" src="http://media.latentflip.com/icons/lastfm_32.png"></a></li>
+                    <li><a href="/rss"><img alt="RSS Feed" title="RSS Feed" src="http://media.latentflip.com/icons/rss_32.png"></a></li>
+                    
+                    {block:IfTwitterUsername}
+                    <li><a href="http://twitter.com/{text:Twitter Username}"><img alt="Twitter" title="Twitter" src="http://media.latentflip.com/icons/twitter_32.png"></a></li>
+                    {/block:IfTwitterUsername}
+                    
+                    {block:IfFlickrUsername}
+                    <li><a href="http://flickr.com/{text:Flickr Username}"><img alt="Flickr" title="Flickr" src="http://media.latentflip.com/icons/flickr_32.png"></a></li>
+                    {/block:IfFlickrUsername}
+
+                      
+                    {block:IfGithubUsername}
+                    <li><a href="http://github.com/{text:Github Username}"><img alt="Github" title="Github" src="http://media.latentflip.com/icons/github_32.png"></a></li>
+                    {/block:IfGithubUsername}
+
+                    {block:IfLastFMUsername}
+                    <li><a href="http://last.fm/user/{text:Last FM Username}"><img alt="Last.fm" title="Last.fm" src="http://media.latentflip.com/icons/lastfm_32.png"></a></li>
+                    {/block:IfLastFMUsername}
                 </ul>
             </div>
         
@@ -158,43 +180,45 @@
                 {/block:Posts}
             </ol>   
             
-            <div id="disqusComments">
-                <script type="text/javascript">var disqus_url = "{Permalink}"; var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";</script>
-                {block:PermalinkPage}
-                    <div id="disqus_thread"></div>
-                        <script type="text/javascript" src="http://disqus.com/forums/philiprobertsblog/embed.js"></script>
-                        <noscript>
-                            <a href="http://disqus.com/forums/philiprobertsblog/?url=ref">View the discussion thread.</a></noscript>
-                {/block:PermalinkPage}
-                
-                <script type="text/javascript">
-                //<![CDATA[
-                (function() {
-                    var links = document.getElementsByTagName('a');
-                    var query = '?';
-                    for(var i = 0; i < links.length; i++) {
-                    if(links[i].href.indexOf('#disqus_thread') >= 0) {
-                        query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-                    }
-                    }
-                    document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/philiprobertsblog/get_num_replies.js' + query + '"></' + 'script>');
-                })();
-                //]]>
-                </script>
-            </div>
+            {block:IfDisqusUsername}
+              <div id="disqusComments">
+                  <script type="text/javascript">var disqus_url = "{Permalink}"; var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";</script>
+                  {block:PermalinkPage}
+                      <div id="disqus_thread"></div>
+                          <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Username}/embed.js"></script>
+                          <noscript>
+                              <a href="http://disqus.com/forums/{text:Disqus Username}/?url=ref">View the discussion thread.</a></noscript>
+                  {/block:PermalinkPage}
+                  
+                  <script type="text/javascript">
+                  //<![CDATA[
+                  (function() {
+                      var links = document.getElementsByTagName('a');
+                      var query = '?';
+                      for(var i = 0; i < links.length; i++) {
+                      if(links[i].href.indexOf('#disqus_thread') >= 0) {
+                          query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+                      }
+                      }
+                      document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{text:Disqus Username}/get_num_replies.js' + query + '"></' + 'script>');
+                  })();
+                  //]]>
+                  </script>
+              </div>
+            {/block:DisqusUsername}
             
-        </div>
 
-        <div id="relative_nav">
-            {block:PreviousPage}
-                <a href="{PreviousPage}">&#171; Previous</a>
-            {/block:PreviousPage}
+            <div id="relative_nav">
+                {block:NextPage}
+                    <a href="{NextPage}">&#171; Older Posts</a>
+                {/block:NextPage}
 
-            {block:NextPage}
-                <a href="{NextPage}">Next &#187;</a>
-            {/block:NextPage}
-        </div>
+                {block:PreviousPage}
+                    <a href="{PreviousPage}">Newer Posts &#187;</a>
+                {/block:PreviousPage}
+            </div>
         
+        </div>
         
         <div id="footer">
             <!--<div id="on_tumblr" class="footer_column"><a href="/archive">Archive</a></div>-->
@@ -215,17 +239,19 @@
             </div>
         </div>
 
-
-        <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-        <script type="text/javascript">
-        try {
-        var pageTracker = _gat._getTracker("UA-12823969-1");
-        pageTracker._setDomainName(".latentflip.com");
-        pageTracker._trackPageview();
-        } catch(err) {}</script>
+        {block:IfGoogleAnalyticsCode}
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+            <script type="text/javascript">
+            try {
+            var pageTracker = _gat._getTracker("{text:Google Analytics Code");
+            pageTracker._setDomainName("{text:Google Analytics Domain}");
+            pageTracker._trackPageview();
+            } catch(err) {}</script>
+        {/block:IfGoogleAnalyticsCode}
     </body>
 </html>
+<!--UA-12823969-1-->
 

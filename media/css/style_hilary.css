@@ -1,0 +1,372 @@
+/*Reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+em { font-style: italic; }
+
+strong { font-weight: bold; } 
+
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+/*End Reset*/
+
+body {
+	font: 15.5px/1.5em "Helvetica Neue", "Helvetica", "Lucida Grande", "Arial", "sans-serif";
+	font-weight: 200;
+	color: #333;
+	background: #211E1E;
+	background-image: url(http://media.latentflip.com/images/plushie.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 100%;
+	
+	padding-bottom: 200px;
+	position: relative;
+}
+
+h1 { font-size: 218%;}
+h2 { font-size: 164%;}
+h3 { font-size: 145%;}
+h4 { font-size: 118%;}
+
+a { color: #FF8134; text-decoration: none; }
+	a:hover { text-decoration: underline; }
+
+p, .post-inner ul {
+	margin-bottom: 20px;
+}
+
+h2 { margin-bottom: 20px; margin-left: -10px;}
+h3, h4, h5, h6 { margin-bottom: 0.5em; margin-left: -5px;}
+
+
+#body-wrapper {
+	margin: 40px auto 0 auto;
+	padding: 0;
+	width: 500px;
+	position: relative;
+}
+
+#personal-info {
+	background: rgba(255,255,255,0.7);
+	position: absolute;
+	top: 0;
+	right: -280px;
+	text-shadow: #cfcfcf 1px 1px 2px;
+}
+
+#personal-info-inner {
+	background: rgba(255, 255, 255, 0.85);
+	width: 180px;
+	padding: 20px;
+	text-align: center;
+}
+
+	#personal-info h1 {
+		font-size: 164%;
+		line-height: 1.2em;
+		margin-bottom: 20px;
+	}
+	
+	#personal-info img {
+		border: 5px white solid;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		margin-bottom: 20px;
+	}
+	
+	#personal-info p {
+		margin-bottom: 10px;
+	}
+
+	#personal-info #elsewhere {
+		margin: 8px 25px 5px 25px;
+	}
+		#personal-info #elsewhere img {
+			border: none;
+			width: 24px;
+			margin: 0;
+		}
+		
+		#personal-info #elsewhere img:hover {
+			-moz-transform: rotate(15deg);
+			-webkit-transform: rotate(15deg);
+			transform: rotate(15deg);
+		}
+		
+		#personal-info #elsewhere li {
+			display: inline;
+			margin: 0 3px;
+			
+		}
+		
+#banner {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: white;
+	height: 50px;
+	z-index: 4;
+}
+
+
+#posts {
+	width: 500px;
+	margin: 0 auto;
+}
+	/*List Styles*/
+	.post-inner li{ margin: 10px 20px;}
+		.post-inner li:before {
+			content: "\25B8";
+			margin-right: 5px;
+			color: #999;
+			text-shadow: none;
+		}
+			.post-inner li li { margin-left: 10px; }
+				.post-inner li li:before { content: "-"; }
+	
+		.post-inner li p { display:inline }
+	.post {
+		/*(padding-bottom: 20px;*/
+		background: rgba(255,255,255,0.7);
+		margin: 40px 20px;
+	}
+		.post-inner,
+		#dsq-content {
+			background: #fafafa;
+			background: rgba(255,255,255,0.85);
+			position: relative;
+			text-shadow: #cfcfcf 1px 1px 2px;
+			z-index: 2;
+			padding: 25px 30px;
+		}
+	
+		.post, 
+		.post-inner,
+		#personal-info,
+		#personal-info-inner,
+		#disqus_thread,
+		#dsq-content {	
+			border-radius: 20px 0 20px 0;
+			-moz-border-radius: 20px 0 20px 0;
+			-webkit-border-radius: 20px 0 20px 0;
+		}
+		
+	.post .meta {
+		font-size: 82%;
+		padding: 6px 10px 7px 10px;
+		line-height: 1em;
+		text-align: right;
+	}
+
+		.post .meta p {
+			margin-bottom: 0;
+		}
+		
+		
+	.post-footer {
+		padding: 3px 10px;
+		font-size: 82%;
+	}
+	
+	.post-footer h5 {
+		display: inline-block;
+		margin: 0;
+		font-weight: 200;
+	}
+
+	ul.tags {
+		display: inline-block;
+		margin: 0;
+	}	
+		ul.tags li {
+			display: inline-block;
+		}
+			ul.tags li a {
+				color: inherit;
+			}
+	
+	
+	#posts blockquote {
+		padding: 10px 30px;
+		position: relative;
+		margin-bottom: 40px;
+		margin-top: 40px;
+		text-align: justify;
+	}
+	
+		#posts blockquote:before, #posts blockquote:after {
+			content: "\201C";
+			position: absolute;
+			line-height: 50px;
+			font-size: 200px;
+			opacity: 0.1;
+			font-family: Georgia, "Times New Roman", Serif;
+			text-shadow: none;
+			color: #999;
+		}
+	
+		#posts blockquote:before {
+			top: 50px;
+			left: -5px;
+		}
+		#posts blockquote:after {
+			content: "\201D";
+			bottom: -55px;
+			right: -5px;
+		}
+	
+	
+	#posts .photo {}
+		#posts .photo img {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			margin-left: -50px;
+			border: 10px rgba(250,250,250,0.9) solid;
+			width: 480px;
+		}
+		
+		#posts .photo .caption p {
+			margin-bottom: 0;
+		}
+		
+		#posts .photo .caption {
+			padding-top: 10px;
+		}
+		
+		#posts .photo img,
+		#posts .text p.image {
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+		}
+		
+	#posts .quote {}
+		#posts .quote .source {
+			text-align: right;
+			font-style: italic;
+			opacity: 0.8;
+			text-shadow: none;
+			font-weight: normal;
+		}
+
+	#posts .text img {
+		margin: 20px;
+		margin-bottom: 5px;
+		width: 350px;
+	}
+	
+	#posts .text p.image {
+		text-align: center;
+		background: white;
+	}
+		#posts .text p.image span.caption {
+			font-size: 90%;
+			display: block;
+			margin: 5px 10px 10px 10px;
+		}
+
+.addendum { 
+	font-size: 70%; 
+	font-style: normal;
+	display:block;
+}
+
+
+#disqusComments {
+	margin: 0 auto;
+	width: 500px;
+}
+
+	#disqus_thread {
+		background: rgba(255,255,255,0.7);
+		margin: 40px 20px;
+	}
+	
+		#dsq-content {
+		}
+		
+		.dsq-subscribe-email, 
+		.dsq-subscribe-rss {
+			display: none;
+		}
+		
+		.dsq-comment-count {
+			display: block;
+			color: inherit;
+		}
+		
+#footer {
+	position: absolute;
+	bottom: 0;
+	background: rgba(0,0,0,0.75);
+	height: 150	px;
+	width: 100%;
+	font-size: 85%;
+	overflow: hidden;
+	padding: 20px 0;
+	color: rgba(255,255,255,0.8);
+	-moz-box-shadow: 0 0 1px rgba(255, 255, 255, 0.14);
+	-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.14);
+	box-shadow: 0 0 1px rgba(255, 255, 255, 0.14);
+}
+	#footer a {
+		color: rgba(255,255,255,0.9);
+	}
+
+	#footer .footer_column {
+		width: 25%;
+		float: left;
+	}
+	
+	#footer #my_stuff {
+		margin-left: 25%;
+		border-left: 1px rgba(255,255,255,0.8) solid;
+	}
+	
+	
+	#footer #blogroll {
+		border-right: 1px rgba(255,255,255,0.8) solid;
+		text-align: right;
+	}
+	
+		#footer .footer_column h4,
+		#footer .footer_column ul {
+			margin: 10px;
+			padding: 0;
+		}
+		
+		#footer .footer_column ul {
+			margin-top: 0;
+		}
+
+#tumblr_controls { top:-35px!important;}
