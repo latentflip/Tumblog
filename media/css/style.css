@@ -324,7 +324,10 @@ h3, h4, h5, h6 { margin-bottom: 0.5em; margin-left: -5px;}
 			display: block;
 			color: inherit;
 		}
-		
+#relative_nav {
+  text-align: center;
+}
+
 #footer {
 	position: absolute;
 	bottom: 0;
